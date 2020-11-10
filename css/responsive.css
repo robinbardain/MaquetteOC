@@ -1,0 +1,207 @@
+body
+{
+
+            width :100% ;
+            margin: 0px;
+            padding :0px ;
+
+}
+
+/* HEADER */
+header{
+    align-items: baseline ;
+}
+header li:nth-child(-n+2)
+{
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav li:nth-child(1){order: 2;}
+header nav li:nth-child(2){order: 3;}
+header nav li:nth-child(3){order: 1;margin-left: 50%;}
+
+header nav ul li:nth-child(1)
+{
+    border-top: 0px solid #ffffff; 
+}
+header li a:hover
+{
+    text-decoration: none;
+    border-top: none;
+}
+header li:nth-child(-n+2):hover{
+    border-bottom: 3px solid #0065FC;
+}
+
+/* order nav header */
+
+.textetete h4
+{
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: normal;
+}
+
+.filtres, .textetete, .recherche
+{
+    margin-left: 30px;
+}
+/* bouton recherche */
+.barrerecherche
+{
+    width: 150px;
+    margin-left: 5px;
+}
+.boutonbarre
+{
+    width: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+.boutonbarre span:first-child
+{
+    display: none;
+}
+.boutonbarre span:last-child
+{
+
+    display: inline;
+}
+.icon
+{
+    padding-left: 10px;
+}
+.info{
+    margin-left: 30px;
+}
+
+/* aside hebergement */
+aside h4
+{
+    width: 100%;
+    margin-left: 30px;
+}
+
+aside{
+margin-bottom: 20px;
+margin-left: 0px;
+max-width: 767px;
+width: 100%;
+}
+aside img {
+    width: 100%;
+}
+aside div{
+    width: 90%;
+    margin-left: 10px;
+}
+
+aside figure{
+    width: 100%;
+}
+
+aside .fa-star {
+    margin-top: 10px;
+}
+
+aside{order: 1;}
+.heberg{order: 2;}
+
+
+.hebergement, aside
+{
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px;
+}
+/* hebergement */
+.heberg
+{
+    margin: 0px;
+    width: 100%;
+    background-color: white ;
+}
+.heberg h4
+{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.ranghaut div
+{
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 90%;
+    height: auto;
+}
+
+.ranghaut img{
+    width: 97%;
+}
+.ranghaut figure{
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(177, 175, 175);
+}
+.heberg figcaption{
+    flex-wrap: wrap;
+    line-height: normal;
+
+}
+.ranghaut .fa-star {
+    margin-top: 10px;
+}
+.heberg h6
+{
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+
+/* activités */
+.activites h4
+{
+    margin-left: 30px;
+    line-height: normal;
+}
+.activites
+{
+    margin: 0;
+    width: 100%;
+}
+.rang
+{
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.rang img{
+    width: 100%;
+    height: 120px;
+}
+.rang figure{
+    width: 100%;
+}
+.rang figcaption h5{
+    margin-left: 15px;
+}
+.rang figcaption
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* footer */
+footer{
+    flex-direction: column;
+    width: 100%;
+    position: initial;
+    margin-left: 10px;
+}
+footer div{
+    margin-left: 10px;
+}

@@ -1,0 +1,693 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* L'en tête de la page */
+header
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo img
+{
+    width: 100px; 
+}
+.logo
+{
+    height: 60px;
+}
+header nav ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+    align-items: baseline;
+}
+header nav li
+{
+    margin-left: 30px;
+    font-weight: bold;
+}
+header nav ul li:nth-child(1)
+{
+    border-top: 1px solid #0065FC; 
+    padding-top: 30px;
+}
+header nav ul li:nth-child(3) a
+{
+    color: #0065FC;
+}
+header li a:hover
+{
+    text-decoration: none;
+    border-top: 1px solid #0065FC; 
+    padding-top: 30px;
+    color: #0065FC;
+}
+
+header a
+{
+     color: rgb(0, 0, 0); 
+     text-decoration: none;
+}
+/* texte en dessous logo */
+
+.textetete
+{
+    margin-top: 30px;
+    line-height: 2px;
+}
+.textetete h4, p
+{
+    font-size:  15px;
+}
+
+/* bouton de recherche */
+
+
+.boutonbarre
+{
+    
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    width: 100px;
+    height: 46px;
+    line-height: 43px;
+    background-color: #0065FC;
+    border-color: white;
+    border-style: none;
+    padding-bottom: 2px;
+
+}
+.boutonbarre span:first-child
+{
+    display: inline;
+}
+.boutonbarre span:last-child
+{
+    
+    display: none;
+}
+.iconbarre
+{
+    
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    height: 10px;
+    line-height: 43px;
+    background-color: #0065FC;
+    border-color: white;
+    border-style: none;
+    padding-bottom: 2px;
+}
+.icon
+{
+    background-color:  #F2F2F2;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 20px;
+}
+.barrerecherche
+{
+    border: 1px solid #F2F2F2;
+    width: 300px;
+    height: 43px;
+    padding-left: 20px;
+    margin-left: 13px;
+    font-weight: bold;
+
+}
+/* filtres sous barre de recherche */
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.filtres h4
+{
+    font-size: 15px;
+}
+h4{
+    font-weight: bold;
+}
+/* bouton filtres économique */
+.economique
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    width: 160px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.economique:hover{
+    text-decoration: none;
+}
+
+.iconeco
+{
+    border-left: 0px solid rgb(3, 3, 3);
+    background-color: #DEEBFF;
+    color: #0065FC;
+    margin-right: 9px;
+    padding: 18px;
+    line-height: 28px;
+    border-radius: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* bouton filtres familiale */
+.familiale
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.familiale:hover{
+    text-decoration: none;
+}
+.iconfam
+{
+    border-left: 0px solid rgb(3, 3, 3);
+    background-color: #DEEBFF;
+    color: #0065FC;
+    margin-right: 12px;
+    padding: 18px;
+    line-height: 28px;
+    border-radius: 30px;
+    padding-right: 21px;
+    padding-left: 18px;
+}
+
+/* bouton filtres romantique */
+.romantique
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    width: 170px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.romantique:hover{
+    text-decoration: none;
+}
+.iconheart
+{
+    border-left: 0px solid rgb(3, 3, 3);
+    background-color: #DEEBFF;
+    color: #0065FC;
+    margin-right: 13px;
+    padding: 18px;
+    line-height: 28px;
+    border-radius: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+/* bouton filtres animaux */
+.animaux
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    width: 210px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.animaux:hover{
+    text-decoration: none;
+}
+.icondog
+{
+    border-left: 0px solid rgba(224, 201, 201, 0.616);
+    background-color: #DEEBFF;
+    color: #0065FC;
+    margin-right: 13px;
+    padding: 18px;
+    line-height: 28px;
+    border-radius: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+.filtres a:hover
+{
+    border-color: #0065FC;
+    opacity: 70%;
+
+}
+.filtres a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* bouton informations sur hébergement */
+
+.info
+{
+    display: flex;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 20px;
+}
+.info button
+{
+    border-radius: 70px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 10px;
+    padding-bottom: 17px;
+    background-color: white;
+    color: #0065FC;
+}
+.infotext
+{
+font-size: 30px;
+font-weight: bold;
+}
+.textinfo
+{
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+
+
+/*section entière Hebergement et populaires */
+
+.hebergement
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* section hébergement */
+.heberg
+{
+    background-color: #F2F2F2;
+    width: 750px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.heberg h4
+{
+font-size: 20px;
+font-weight: bolder;
+margin-top: 40px;
+margin-bottom: 1px;
+margin-left: 45px;
+}
+
+/* image arrondi dans la section hebergement */
+.imagehebergement
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+/* rang haut hebergement */
+.ranghaut
+{
+display: flex;
+flex-direction: row;
+width: 100%;
+flex-wrap: wrap;
+margin-bottom: 60px;
+margin-left: 15px;
+}
+.ranghaut div{
+    margin-bottom: 20px;
+}
+.ranghaut img
+{
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: white 5px solid;
+}
+.ranghaut figcaption
+{
+    line-height: 1px;
+    padding-left: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.ranghaut figure
+{
+    border: rgb(255, 255, 255) 0px solid;
+    background-color: rgb(255, 255, 255);
+    width: 210px;
+    border-radius: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    word-wrap: break-word;
+}
+.ranghaut .fa-star
+{
+    margin-top: 10%;
+    width: 15px;
+}
+
+/* lien de tout les figures */
+.ranghaut a
+{
+    color: black;
+    text-decoration: none;
+}
+.ranghaut a:hover, .ranghaut a:hover
+{
+    text-decoration: none;
+}
+.ranghaut div
+{
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 210px;
+    height: 220px;
+}
+/* afficher plus dans section hebergement marseille */
+h6 a
+{
+    margin-left: 45px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+h6 a:hover
+{
+    text-decoration: none;
+    color: rgb(71, 66, 66);
+}
+/* aside populaires */
+aside
+{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 450px;
+}
+
+/* titre aside populaires */
+aside h4
+{   
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    }
+/* icon titre aside populaires */
+.line
+{
+    margin-right: 10%;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    right: 12px;
+}
+aside figure img
+{
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+aside div{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 400px;
+}
+aside figure
+{
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 5px solid;
+}
+aside figcaption
+{
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 150px;
+    line-height: 15px;
+}
+
+aside .fa-star
+{
+    margin-top: 40px;
+}
+figcaption h5
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+aside a 
+{
+    color: black;
+    text-decoration: none;
+}
+aside a:hover
+{
+    text-decoration: none;
+}
+
+/* activités marseille */
+
+.activites
+{
+    width: 1300px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+/* image arrondi dans la section activités */
+.activites h4
+{
+font-size: 20px;
+font-weight: bold;
+margin-top: 50px;
+line-height: 1px;
+}
+/* rang activités */
+.rang
+{
+display: flex;
+margin-bottom: 50px;
+width: 100%;
+}
+.rang img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+/* image seul en height */
+.imageactivite img
+{
+    width: 100%;
+    height: 320px;
+}
+
+/* image deux sur le height */
+/* image 1 et 2 colonne */
+.imageactivite1 img
+{
+    height: 170px;
+    width: 100%;
+}
+.imageactivite1
+{
+    margin-bottom: 35px;
+}
+.imageactivite2 img
+{
+    height: 100px;
+    width: 100%;
+}
+/* image 3 et 4 colonne */
+.imageactivite3 img
+{
+    height: 130px;
+    width: 100%;
+}
+.imageactivite4 img
+{
+    height: 140px;
+    width: 100%;
+}
+.imageactivite4
+{
+    margin-bottom: 30px;
+}
+/* suite activités */
+.rang figcaption
+{
+    background-color: rgb(255, 255, 255);
+    width: 271px;
+    height: 35px;
+    padding-left: 17px;
+    border: rgb(255, 255, 255) 1px solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(177, 175, 175);
+    position: relative;
+    bottom: 4px;
+}
+.rang figure
+{
+    width: 290px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.rang div
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.rangrow div{
+    margin-bottom: -7px;
+}
+.rang a {
+    color: black;
+    text-decoration: none;
+}
+.rang a:hover{
+    text-decoration: none;
+}
+/* footer */
+
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 1280px;
+    position: relative;
+    right: 40px;
+    line-height: 25px;
+}
+footer h5
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+footer nav ul
+{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+footer a
+{
+    color: black;
+    text-decoration: none;
+}
+footer div
+{
+    margin-left: 50px;
+
+}
+.propos
+{
+    width: 400px;
+}
+.propos a:hover
+{
+    color: #0065FC;
+}
+.noshebergements a:hover
+{
+    color: #0065FC;
+}
+.assistance a:hover
+{
+    color: #0065FC;
+}
+.noshebergements
+{
+    width: 400px;
+
+}
+.assistance
+{
+    width: 400px;
+
+}
+
+
+
+
+/* systeme de notation étoiles */
+
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+   .fa-star {
+	color: #F2F2F2;
+	cursor: pointer;
+	padding-left: 1px;
+}
+/* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+.fa-star.gold {
+	color: #0065FC;
+}
+
+	/* Le groupe '.stars' positionne les étoiles
+		 les unes à côté des autres sans espacements. */
+	.stars {
+		display: inline-flex;
+		justify-content: flex-start;
+        font-size: 1em; 
+        width: 90px;
+    }
