@@ -39,6 +39,10 @@ header nav ul li:nth-child(1)
     border-top: 1px solid #0065FC; 
     padding-top: 30px;
 }
+header nav ul li:nth-child(1) a
+{
+    color: #0065FC;
+}
 header nav ul li:nth-child(3) a
 {
     color: #0065FC;
@@ -63,9 +67,9 @@ header a
     margin-top: 30px;
     line-height: 2px;
 }
-.textetete h4, p
+p
 {
-    font-size:  15px;
+font-size: 14px;
 }
 
 /* bouton de recherche */
@@ -126,6 +130,9 @@ header a
     margin-left: 13px;
     font-weight: bold;
 
+}
+.barrerecherche::placeholder {
+    color: #000000;
 }
 /* filtres sous barre de recherche */
 
@@ -412,6 +419,7 @@ h6 a:hover
 {
     text-decoration: none;
     color: rgb(71, 66, 66);
+    opacity: 60%;
 }
 /* aside populaires */
 aside
@@ -535,7 +543,7 @@ width: 100%;
 .imageactivite img
 {
     width: 100%;
-    height: 320px;
+    height: 335px;
 }
 
 /* image deux sur le height */
@@ -574,7 +582,7 @@ width: 100%;
 {
     background-color: rgb(255, 255, 255);
     width: 271px;
-    height: 35px;
+    height: 50px;
     padding-left: 17px;
     border: rgb(255, 255, 255) 1px solid;
     border-bottom-left-radius: 20px;
@@ -586,7 +594,7 @@ width: 100%;
 .rang figure
 {
     width: 290px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -627,7 +635,7 @@ footer h5
 footer nav ul
 {
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding: 0px;
 }
 footer a
 {
@@ -666,8 +674,20 @@ footer div
 
 }
 
+/* animation de toutes les images */
+.ranghaut div figure:hover{
 
-
+    box-shadow: 0 0 20px rgba(33,33,33,.2);
+        border-radius: 20px;
+}
+aside div figure:hover{
+    box-shadow: 0 0 20px rgba(33,33,33,.2);
+        border-radius: 20px;
+}
+.rang div figure:hover{
+        box-shadow: 0 0 20px rgba(33,33,33,.2);
+        border-radius: 20px;
+}
 
 /* systeme de notation étoiles */
 

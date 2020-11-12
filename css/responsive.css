@@ -9,21 +9,19 @@ body
 
 /* HEADER */
 header{
-    align-items: baseline ;
+    align-items: center ;
 }
-header li:nth-child(-n+2)
+header li:nth-child(2)
 {
     border-bottom: 3px solid #f2f2f2;
-    padding-bottom: 15px;
-    margin-left: 10px;
 }
 header nav ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-header nav li:nth-child(1){order: 2;}
-header nav li:nth-child(2){order: 3;}
-header nav li:nth-child(3){order: 1;margin-left: 50%;}
+header nav li:nth-child(1){order: 2; padding-left:30%;padding-right: 20%;position: absolute; right: 40%; top: 30px;}
+header nav li:nth-child(2){order: 3;padding-left: 20%;padding-right: 30%; position: absolute;left: 50%;top: 60px;}
+header nav li:nth-child(3){order: 1;width: 50%;}
 
 header nav ul li:nth-child(1)
 {
@@ -37,29 +35,38 @@ header li a:hover
 header li:nth-child(-n+2):hover{
     border-bottom: 3px solid #0065FC;
 }
-
+header nav ul li:nth-child(1){
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
 /* order nav header */
 
 .textetete h4
 {
+    margin-top: 50px;
     width: 100%;
     flex-wrap: wrap;
     line-height: normal;
 }
 
-.filtres, .textetete, .recherche
+.filtres, .textetete, .recherche, .logo
 {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 /* bouton recherche */
+
+.recherche .fas, .boutonbarre{
+    width: 90%;
+    margin-right: -12%;
+}
 .barrerecherche
 {
-    width: 150px;
+    width: 80%;
     margin-left: 5px;
 }
 .boutonbarre
 {
-    width: 40px;
+    width: 13%;
     margin: 0px;
     padding: 0px;
 }
@@ -77,14 +84,14 @@ header li:nth-child(-n+2):hover{
     padding-left: 10px;
 }
 .info{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 /* aside hebergement */
 aside h4
 {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 aside{
@@ -104,7 +111,9 @@ aside div{
 aside figure{
     width: 100%;
 }
-
+figcaption h5{
+    margin-bottom: 0px;
+}
 aside .fa-star {
     margin-top: 10px;
 }
@@ -118,23 +127,24 @@ aside{order: 1;}
     flex-direction: column;
     width: 100%;
     border-radius: 0px;
+
 }
 /* hebergement */
 .heberg
 {
     margin: 0px;
     width: 100%;
-    background-color: white ;
+    background-color: rgb(255, 255, 255) ;
 }
 .heberg h4
 {
-    margin-bottom: 30px;
-    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 .ranghaut div
 {
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: -5px;
     width: 90%;
     height: auto;
 }
@@ -149,22 +159,24 @@ aside{order: 1;}
 .heberg figcaption{
     flex-wrap: wrap;
     line-height: normal;
-
 }
 .ranghaut .fa-star {
     margin-top: 10px;
 }
-.heberg h6
+h6
 {
-    margin-top: 50px;
-    margin-left: -15px;
+    margin-bottom: 0px;
+    margin-top: -50px;
+    margin-left: -30px;
 }
 
 
 /* activités */
 .activites h4
 {
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 30px;
     line-height: normal;
 }
 .activites
@@ -174,19 +186,27 @@ aside{order: 1;}
 }
 .rang
 {
-    margin-left: 10px;
+    
     flex-direction: column;
 }
-
+.rangrow
+{
+    margin-left: 0px;
+}
+div a .imageactivite
+{
+    margin-left: 5px;
+}
 .rang img{
     width: 100%;
     height: 120px;
 }
 .rang figure{
-    width: 100%;
+    width: 90%;
+    min-width: 279px;
 }
 .rang figcaption h5{
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .rang figcaption
 {
@@ -200,7 +220,7 @@ footer{
     flex-direction: column;
     width: 100%;
     position: initial;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 footer div{
     margin-left: 10px;
